@@ -4,9 +4,11 @@
 }
 img {
   align-items: center;
-  width: 100%;
+  width: 80%;
   margin-bottom: 3em;
   margin-top: 3em;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 body {
   height: 100%;

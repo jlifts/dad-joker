@@ -34,6 +34,9 @@ export default class App extends React.Component {
           jokes,
           isFetchingJokes: false
         });
+        let randomJoker = Math.floor(Math.random() * json.results.length);
+        let randomJokes = json.results[randomJoker];
+        console.log(randomJokes);
       });
   }
 
@@ -56,7 +59,7 @@ export default class App extends React.Component {
       <div className="App">
         <img
           className="logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Google_Developers_logo.svg/1200px-Google_Developers_logo.svg.png"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
           alt="logo"
         />
         <SearchForm
